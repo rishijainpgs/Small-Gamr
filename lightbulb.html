@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id = "display"></div>
+
+<div id = "dis"></div>
+<div id = "p"></div>
+<button id="on" onclick="on()"> Swtich ON</button> &nbsp;
+<button id="of" onclick="off()"> Swtich OFF</button> &nbsp;
+<button id="flicker" onclick="flicker()"> Flicker</button> &nbsp;
+<button id="stop_flicker" onclick="stopFlicker()"> Stop Flicker</button>
+
+<script type="text/javascript">
+
+var a = document.getElementById('display');
+
+var timeOut; 
+
+var bulb_ON = new Image();
+bulb_ON.src = "bulb_ON.jpg";
+bulb_ON.height = 200;
+bulb_ON.width = 150;
+
+var bulb_OFF = new Image();
+bulb_OFF.src = "bulb_OFF.jpg";
+bulb_OFF.height = 200;
+bulb_OFF.width = 150;
+
+
+document.body.onload = function(){a.appendChild(bulb_OFF)};
+
+
+
+function on(){
+
+//clearTimeOut(timeOut);
+a.replaceChild(bulb_ON,a.childNodes[0]);
+console.log("on executed");
+//console.log(a.childNodes.length);
+}	
+
+function off(){
+
+//clearTimeOut(timeOut);
+
+a.replaceChild(bulb_OFF,a.childNodes[0]);
+//console.log(a.childNodes.length);
+console.log("off executed");
+}
+
+function flicker(){
+	
+		//console.log("before setInterval executed");
+		//setInterval(on,100);
+		//console.log("setInterval executed");
+		//setInterval(off,200);
+		//console.log("after off");
+		
+		setTimeout(on, 500);
+		setTimeout(off, 700);
+		timeOut =  setTimeout(flicker,300);
+		
+	}
+
+function stopFlicker(){
+
+clearTimeout(timeOut);
+
+}
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
