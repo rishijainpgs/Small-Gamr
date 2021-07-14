@@ -7,3 +7,6 @@
 .form-control::placeholder {
   color: dodgerblue;
 }
+.form-control{
+  color: pink;
+}
