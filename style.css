@@ -1,0 +1,18 @@
+.security-key-form{
+    background-color: antiquewhite;
+}
+.webchat-security-key-form{
+    background-color: pink;
+}
+.form-control::placeholder {
+  color: dodgerblue;
+}
+.form-control{
+  color: pink;
+}
+.btn-primary {
+    background-color: purple;  
+}
+.webchat-security-key-form * {
+    font-family: fantasy;
+}
