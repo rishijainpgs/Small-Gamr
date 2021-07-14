@@ -4,3 +4,6 @@
 .webchat-security-key-form{
     background-color: aquamarine;
 }
+.input-group .form-control::placeholder {
+  color: dodgerblue;
+}
