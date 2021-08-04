@@ -1,0 +1,28 @@
+.start-section{
+    margin-top: auto;
+}
+
+.cobrowse-security-form{
+    width: 382px;
+    height: 342px;
+}
+
+.webchat-security-key-form{
+    width: 340px;
+    color: white;
+    margin-top: 0px;
+}
+
+.input-group-lg > .form-control{
+    height: 35px;
+}
+
+iframe{
+    border: 1px;
+}
+
+.input-group-lg > .input-group-btn > .btn{
+    height: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
