@@ -1,0 +1,25 @@
+.start-section{
+    margin-top: auto;
+}
+
+.webchat-security-key-form{
+    width: 340px;
+    background-color: white;
+    margin-top: 0px;
+    border: 0px;
+    padding: 24px 16px;
+}
+
+.input-group-lg > .form-control{
+    height: 35px;
+}
+
+.input-group-lg > .input-group-btn > .btn{
+    height: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.input-group{
+    width: inherit;
+}
